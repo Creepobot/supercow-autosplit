@@ -35,7 +35,7 @@ Timer also starts when the player enters the level, however the split happens wh
 
 6. If checkmarks appeared near "start" and "split" and the "advanced" panel appeared, then the script should work
 
-7. in the "advanced" panel, select the state you need, and then click "OK" and close all the settings windows
+7. in the "advanced" panel, select the state you need, then click "OK" and close all the settings windows
 
 ### Problems
 
@@ -55,4 +55,4 @@ If you have completed all the installation steps, but autosplit does not work co
 
 * Download the latest possible version of LiveSplit or make sure you have at least .NET Framework 4.6.1 installed
 
-If none of this helps, feel free to ask for help on [our discord server](https://discord.com/invite/JzCvwh5) (RU), or just DM me - `Creepobot#9299`
+If none of this helps, feel free to ask for help on [our discord server](https://discord.com/invite/JzCvwh5), or just DM me - `Creepobot#9299`
