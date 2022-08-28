@@ -56,3 +56,6 @@ If you have completed all the installation steps, but autosplit does not work co
 * Download the latest possible version of LiveSplit or make sure you have at least .NET Framework 4.6.1 installed
 
 If none of this helps, feel free to ask for help on [our discord server](https://discord.com/invite/JzCvwh5), or just DM me - `Creepobot#9299`
+
+## README in other languages
+[RUS](https://github.com/Creepobot/SupercowAutosplit/blob/main/README_RU.md)
