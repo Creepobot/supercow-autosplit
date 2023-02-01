@@ -23,7 +23,7 @@ Timer also starts when the player enters the level, however the split happens wh
 
 ### Installation
 
-1. Download autosplit.asl from this repository
+1. Download autosplit.asl [here](https://github.com/Creepobot/supercow-autosplit/releases/latest)
 
 2. Open your splits file (.lss) in LiveSplit
 
@@ -45,6 +45,8 @@ If you have completed all the installation steps, but autosplit does not work co
 
 * Check that the .exe file of the game is called "supercow"
 
+* If "Game Version" in Layout Settings is set to "Unknown build", [сontact us for help](#if-none-of-this-helps-feel-free-to-ask-for-help-on-our-discord-server-or-just-dm-me---creepobot9299)
+
 * Check that **only the state you need** is selected in the "advanced" panel
 
 * Restart the game or LiveSplit
@@ -55,7 +57,7 @@ If you have completed all the installation steps, but autosplit does not work co
 
 * Download the latest possible version of LiveSplit or make sure you have at least .NET Framework 4.6.1 installed
 
-If none of this helps, feel free to ask for help on [our discord server](https://discord.com/invite/JzCvwh5), or just DM me - `Creepobot#9299`
+##### If none of this helps, feel free to ask for help on [our discord server](https://discord.com/invite/JzCvwh5), or just DM me - `Creepobot#9299`
 
 ## README in other languages
 [RUS](https://github.com/Creepobot/SupercowAutosplit/blob/main/README_RU.md)
