@@ -1,15 +1,22 @@
-state("supercow", "New build")
+state("supercow", "Aug03 build")
 {
-	float load: 0x0156B0, 0xC;
-	int anim: 0x00D7F4, 0x0;
-	int lifes: 0x00BD0C, 0x0;
+	float load: 0x12DBA4;
+	int anim: 0x1033EB8;
+	int lifes: 0xCE28C;
 }
 
-state("supercow", "Old build")
+state("supercow", "Aug23 build")
 {
-	float load: 0x015910, 0xC;
-	int anim: 0x00D8B4, 0x0;
-	int lifes: 0x00BDCC, 0x0;
+	float load: 0x12DBA4;
+	int anim: 0x1033EC8;
+	int lifes: 0xCE294;
+}
+
+state("supercow", "Sep26-Nov13 build")
+{
+	float load: 0x12A984;
+	int anim: 0x1030CC8;
+	int lifes: 0xCA2D4;
 }
 
 startup
@@ -20,32 +27,35 @@ startup
 	settings.SetToolTip("bad", "Autosplit for Bad_Ending% category");
 }
 
+// Aug03: Memory Size - 17047552, Entry Point - 4654650
+// Aug23: Memory Size - 17047552, Entry Point - 4654826
+// Sep26: Memory Size - 17035264
+// Nov13: Memory Size - 17035264
+
 init
 {
-	var module = modules.First();
-	if (module.ModuleMemorySize == 17047552)
-		version = "Old build";
-	else if (module.GetHashCode() == 21265660)
-		version = "Old build";
+    var module = modules.First();
+	var memsize = module.ModuleMemorySize;
+    var entrypoint = (int)module.EntryPointAddress;
+	if (memsize == 17047552 && entrypoint == 4654650)
+		version = "Aug03 build";
+    else if (memsize == 17047552 && entrypoint == 4654826)
+		version = "Aug23 build";
+	else if (memsize == 17035264)
+		version = "Sep26-Nov13 build";
 	else
-		version = "New build";
+		version = "Unknown build";
 }
 
 start
-{
-	return current.load == 0 && old.load != 0;
-}
+{ return current.load == 0 && old.load != 0; }
 
 split
 {
 	bool split = false;
 	if (settings["main"])
-	{
-		split = current.anim == 14 && old.anim != 14;
-	}
+	{ split = current.anim == 14 && old.anim != 14; }
 	else if(settings["bad"])
-	{
-		split = current.lifes == old.lifes - 1;
-	}
+	{ split = current.lifes == old.lifes - 1; }
 	return split;
 }
