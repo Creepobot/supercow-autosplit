@@ -59,7 +59,7 @@ Supercow Autosplit - это скрипт для LiveSplit, созданный д
 
 * Загрузите последнюю возможную версию LiveSplit или убедитесь, что у вас установлена платформа .NET Framework не ниже 4.6.1.
 
-##### Если ничего из этого не поможет, не стесняйтесь обращаться за помощью на [наш дискорд сервер](https://discord.com/invite/JzCvwh5), или просто напишите мне - `Creepobot#9299`
+##### Если ничего из этого не поможет, не стесняйтесь обращаться за помощью на [наш дискорд сервер](https://discord.supercow.community/), или просто напишите мне - [Creepobot#9299](https://discordapp.com/users/555513040523493406)
 
 ## README на других языках
 [ENG](https://github.com/Creepobot/SupercowAutosplit/blob/main/README.md)
